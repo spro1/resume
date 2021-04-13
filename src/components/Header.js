@@ -14,14 +14,14 @@ export default class Header extends Component{
                     <Row>
                         <div className="header-content">
                             <Row>
-                                <Col xs={8}>
+                                <Col xs={9}>
                                     <h1>김 윤석</h1>
                                     <br/>
                                     <p><FaUserAlt size="30"/>  남 / 26세</p>
                                     <p><GrMail size="30"/>  yundol@kakao.com</p>
                                     <a href="https://github.com/spro1" target="_blank"><p><FaGithubAlt size="30"/>  https://github.com/spro1</p></a>
                                 </Col>
-                                <Col>
+                                <Col md={3}>
                                     <div className="header-image" style={{backgroundImage:`url(${Profile})`}}>
 
                                     </div>

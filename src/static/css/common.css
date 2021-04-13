@@ -41,15 +41,17 @@ body{
 .header{
     position: initial;
     width: 100%;
-    height: 457px;
+    height: 100%;
     left: 0px;
     top: 0px;
+    padding-bottom: 50px;
     background: #F5DF4D;
 }
 
 .header-content{
     margin-top: 100px;
     width: 100%;
+    margin-left: 10px;
 }
 .header-content a{
     color: black;
@@ -62,11 +64,13 @@ body{
 }
 
 .header-image{
-    position: absolute;
+    display: block;
+    margin: auto;
     width: 250px;
     height: 250px;
     border-radius: 125px;
     background-size: cover;
+    text-align: center;
 }
 
 /* content */
