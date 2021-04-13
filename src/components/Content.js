@@ -20,35 +20,100 @@ import UB from "../static/image/ubuntu.png";
 import AWS from "../static/image/aws.png";
 import GCL from "../static/image/gcl.png";
 
+const projects = [
+    {
+        id:1,
+        company:'(주)모니터랩',
+        title:'악성 도메인 검사 시스템',
+        date:'2015.03.01 ~ 2015.09.01',
+        skill:'Python, MongoDB, VMware',
+        contents:<p>- 도메인 분석 결과 마이닝<br/>- VMware 내/외부 통신 모듈 개발<br/>- 도메인 리스트 관리 프로세스 개발</p>
+    },{
+        id:2,
+        company:'(주)모니터랩',
+        title:'Threat Intelligence 데이터 크롤링',
+        date:'2015.12.10 ~ 2015.12.20',
+        skill:'Python',
+        contents:<p>- 해외 Threat Intelligence 데이터 수집 크롤러 개발</p>
+    },{
+        id:3,
+        company:'(주)모니터랩',
+        title:'악성코드 프로파일링 시스템',
+        date:'2016.01.01 ~ 2016.11.10',
+        skill:'Python, MongoDB, PostgreSQL',
+        contents:<p>- N-gram 파일 유사도 분석 시스템 개발</p>
+    },{
+        id:4,
+        company:'(주)모니터랩',
+        title:'실시간 파일 분석 시스템',
+        date:'2017.02.01 ~ 2017.07.01',
+        skill:'Python, MongoDB, PostgreSQL',
+        contents:<p>- 파일 정적분석 모듈 개발<br/>- 동적분석 Cuckoo Sandbox 오픈소스 연동<br/>- 분석 결과 입출력용 REST-API 개발</p>
+    },{
+        id:5,
+        company:'(주)모니터랩',
+        title:'APT 시스템 연동',
+        date:'2017.10.01 ~ 2018.05.01',
+        skill:'Python, MongoDB, PostgreSQL',
+        contents:<p>- APT 시스템 연동용 REST-API 개발</p>
+    },{
+        id:6,
+        company:'(주)모니터랩',
+        title:'Threat Intelligence 웹 사이트',
+        date:'2018.07.01 ~ 2018.12.15',
+        skill:'Golang, HTML, CSS, JS, MongoDB',
+        contents:<p>- 악성 정보 공유 웹사이트 개발<br/>- 데이터 공유용 REST-API 개발</p>
+    },{
+        id:7,
+        company:'(주)모니터랩',
+        title:'도메인 패턴 다중 매칭 라이브러리',
+        date:'2019.02.01 ~ 2019.04.15',
+        skill:'Golang',
+        contents:<p>- 1:N 패턴 매칭 라이브러리 제작</p>
+    },{
+        id:8,
+        company:'(주)집쇼코리아',
+        title:'360간 웹사이트',
+        date:'22020.11.02 ~ 2020.11.30',
+        skill:'Express.js, Reacct.js',
+        contents:<p>Express.js Backend 개발 작업<br/>- React.js Frontend 개발 작업<br/>- AWS 서버 구축 배포</p>
+    }
+]
+
 export default class Content extends Component{
     render() {
         return (
             <div className="content">
                 <Container>
                     <Row>
-                        <Col className="content-header">
-                            <h6>소개 / About me</h6>
+                        <Col className="content-header" >
+                            <h6 className="content-header-title"><strong>소개 / About me</strong></h6>
                         </Col>
                     </Row>
-                    <hr/>
                     <Row>
                         <Col>
                             <p>
-                                안녕하세요. 나는 랜덤 자기소개가 들어가는 말풍선 입니다. 제가 해드릴 말은 어서 빨리 좋은 회사에 취업하시길 바랍니다.<br/>
+                                안녕하세요. 항상 생각하고 고민하는 자칭 타칭 <strong style={{fontSize:'20px'}}>아이디어뱅크 김윤석</strong>입니다.<br/>
                                 <br/>
-                                되려니와, 싹이 꽃이 황금시대를 것이다. 되려니와, 우리 때에, 우리 보라. 안고, 오직 주는 두기 가지에 것이다.<br/>
-                                같은 오직 이상의 능히 곳으로 오아이스도 힘있다.<br/>
-                                피고, 관현악이며, 청춘 없으면, 가는 유소년에게서 그리하였는가? 불어 그것은 미인을 바로 일월과 거친 있는가? 예가 보이는 오직 것이다.<br/>
-                                피어나기 얼마나 살 노래하며 못하다 바이며, 쓸쓸하랴? 피가 얼마나 때까지 청춘 그들을 귀는 넣는 듣는다. 인생에 심장의 할지니, 날카로우나 것이 인류의 가치를 끓는다. 인간의 그들은 산야에 무엇이 기쁘며, 우리의 청춘의 가지에 있는가?<br/>
+                                <strong style={{fontSize:'20px'}}>개발자</strong> 김윤석은 여러 아이디어를 통해 만든 서비스가 많은 사람들의 삶이 더욱 편하고 이로워지게 하는 것이 목표인 개발자입니다.<br/>
+                                새로운 기술을 배우는데 거부감이 없고 아이디어를 생각하고 구현하는 것을 좋아하여 특정 분야가 아닌 여러 분야의 개발에 관심을 가지고 있습니다.<br/>
+                                아이디어나 새로운 기술에 관해서 토론하는 것을 좋아합니다.
+                                <br/>
+                                <br/>
+                                <strong style={{fontSize:'20px'}}>사람</strong> 김윤석은 독서를 좋아하고 사진 찍기와 그림 그리기를 좋아합니다.<br/>
+                                주로 자기계발 서적과 심리학 책을 많이 읽고 사진은 풍경보다는 인물 찍기를 좋아하고 찍히는 것도 좋아합니다. 그림은 유화를 이용해서 그립니다.<br/>
+                                등산도 좋아하지만 높은 산은 보다는 가벼운 운동으로 동네 작은 뒷산을 선호합니다.<br/>
+                                평소에는 약간 낯을 가리지만, 친해지면 말이 많아지고 웃고 떠드는 것을 좋아합니다.<br/>
+                                <br/>
+                                저에 대해서 더 자세히 알고 싶으면 메일로 연락 주세요.
                             </p>
                         </Col>
                     </Row>
                     <Row>
                         <Col className="content-header">
-                            <h6>경력사항 / Career</h6>
+                            <h6 className="content-header-title"><strong>경력사항 / Career</strong></h6>
                         </Col>
                     </Row>
-                    <hr/>
                     <Row>
                         <Col xs={4}>
                             2014.07.28 - 2019.05.12
@@ -78,10 +143,32 @@ export default class Content extends Component{
                     </Row>
                     <Row>
                         <Col className="content-header">
-                            <h6>학력 사항 / Education</h6>
+                            <h6 className="content-header-title"><strong>학력 사항 / Education</strong></h6>
                         </Col>
                     </Row>
-                    <hr/>
+                    <Row>
+                        <Col xs={4}>
+                            2012.03 - 2015.02
+                        </Col>
+                        <Col>
+                            <p><strong>인천전자마이스터고등학교</strong></p>
+                            <p>전자제어과 · 졸업</p>
+                        </Col>
+                    </Row>
+                    <Row>
+                        <Col xs={4}>
+                            2019.03 - 재학중
+                        </Col>
+                        <Col>
+                            <p><strong>인하대학교(야간대)</strong></p>
+                            <p>소프트웨어융합공학과 · 재학</p>
+                        </Col>
+                    </Row>
+                    <Row>
+                        <Col className="content-header">
+                            <h6 className="content-header-title"><strong>기술 스택 / Technology Stack</strong></h6>
+                        </Col>
+                    </Row>
                     <Row>
                         <Col>Frontend</Col>
                     </Row>
@@ -121,25 +208,36 @@ export default class Content extends Component{
                     </Row>
                     <Row>
                         <Col className="content-header">
-                            <h6>프로젝트 / Project</h6>
+                            <h6 className="content-header-title"><strong>프로젝트 / Project</strong></h6>
                         </Col>
                     </Row>
-                    <hr/>
-                    <Row>
-                        <Col xs={1}>
-                            <h1>8</h1>
-                        </Col>
-                        <Col xs={11}>
-                            <h3>360간 웹사이트</h3>
-                            <Row>
-                                <Col xs={2} className="project-title">소속</Col>
-                                <Col xs={10} className="project-desc">(주)집쇼코리아</Col>
-                                <Col xs={2} className="project-title">기간</Col>
-                                <Col xs={10} className="project-desc">2020.11.02 ~ 2020.11.30</Col>
+                    {
+                        projects.reverse().map(project => {
+                            return <Row>
+                                <Col xs={1}>
+                                    <h1>{project.id}</h1>
+                                </Col>
+                                <Col xs={11}>
+                                    <h3>{project.title}</h3>
+                                    <Row>
+                                        <Col xs={2} className="project-title">소속</Col>
+                                        <Col xs={10} className="project-desc">{project.company}</Col>
+                                        <Col xs={2} className="project-title">기간</Col>
+                                        <Col xs={10} className="project-desc">{project.date}</Col>
+                                        <Col xs={2} className="project-title">사용 기술</Col>
+                                        <Col xs={10} className="project-desc">{project.skill}</Col>
+                                        <Col xs={2} className="project-title">내용</Col>
+                                        <Col xs={10} className="project-desc">
+                                            <p>
+                                                {project.contents}
+                                            </p>
+                                        </Col>
+                                    </Row>
+                                    <hr/>
+                                </Col>
                             </Row>
-                        </Col>
-
-                    </Row>
+                        })
+                    }
                 </Container>
             </div>
         );

@@ -1,5 +1,10 @@
 import React, {Component} from "react";
 import {Col, Container, Row} from "react-bootstrap";
+import { FaGithubAlt, FaUserAlt } from "react-icons/fa";
+import { GrMail } from "react-icons/gr";
+
+import Profile from "../static/image/profile.jpg"
+
 
 export default class Header extends Component{
     render() {
@@ -10,13 +15,14 @@ export default class Header extends Component{
                         <div className="header-content">
                             <Row>
                                 <Col xs={8}>
-                                    <h1>이름</h1>
-                                    <h5>남 / 26세</h5>
-                                    <h5>naver@naver.com</h5>
-                                    <h5>http://www.naver.com</h5>
+                                    <h1>김 윤석</h1>
+                                    <br/>
+                                    <p><FaUserAlt size="30"/>  남 / 26세</p>
+                                    <p><GrMail size="30"/>  yundol@kakao.com</p>
+                                    <a href="https://github.com/spro1" target="_blank"><p><FaGithubAlt size="30"/>  https://github.com/spro1</p></a>
                                 </Col>
                                 <Col>
-                                    <div className="header-image">
+                                    <div className="header-image" style={{backgroundImage:`url(${Profile})`}}>
 
                                     </div>
                                 </Col>
