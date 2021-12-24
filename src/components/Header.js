@@ -20,6 +20,7 @@ export default class Header extends Component{
                                     <p><FaUserAlt size="30"/>  남 / 26세</p>
                                     <p><GrMail size="30"/>  yundol@kakao.com</p>
                                     <a href="https://github.com/spro1" target="_blank"><p><FaGithubAlt size="30"/>  https://github.com/spro1</p></a>
+                                    <h6>Last updated: 2021-12-24</h6>
                                 </Col>
                                 <Col md={3}>
                                     <div className="header-image" style={{backgroundImage:`url(${Profile})`}}>
