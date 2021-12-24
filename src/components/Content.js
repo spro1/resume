@@ -96,6 +96,14 @@ const projects = [
         skill:'Linux',
         contents:<p>- 리눅스 Server 구축</p>,
         site: "http://zipshowkorea.com"
+    },{
+        id:11,
+        company:'(주)집쇼코리아',
+        title:'로케이션픽 - 스튜디오 임대 웹서비스',
+        date:'2021.03.01 ~ 2020.11.30',
+        skill:'Express.js, AWS, MongoDB, HTML, CSS, JS',
+        contents:<p>- Express.js 웹 서버 개발<br/>- ejs 템플릿 클라이언트 사이드 작업<br/>- DB 서버 구축<br/>- 그 외 퍼블리싱을 제외한 모든 작업<br/>- AWS 서버 구축 배포</p>,
+        site: "http://locationpick.com"
     }
 ]
 
