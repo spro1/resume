@@ -37,6 +37,12 @@ body{
     font-family: 'NanumBarunGothic', sans-serif;
 }
 
+a, a:hover{
+    color: #494949;
+    text-decoration: none;
+}
+
+
 /* header */
 .header{
     position: initial;
@@ -55,7 +61,6 @@ body{
 }
 .header-content a{
     color: black;
-    text-decoration: none;
 }
 
 .header-content p {

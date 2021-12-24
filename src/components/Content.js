@@ -78,21 +78,24 @@ const projects = [
         title:'360간 웹사이트',
         date:'2020.11.02 ~ 2020.11.30',
         skill:'Express.js, Reacct.js',
-        contents:<p>- Express.js Backend 개발 작업<br/>- React.js Frontend 개발 작업<br/>- AWS 서버 구축 배포</p>
+        contents:<p>- Express.js Backend 개발 작업<br/>- React.js Frontend 개발 작업<br/>- AWS 서버 구축 배포</p>,
+        site: "https://www.360space.kr"
     },{
         id:9,
         company:'(주)집쇼코리아',
         title:'APCEIU 유네스코 웹사이트',
         date:'2021.05.21 ~ 2020.06.30',
         skill:'Node.js',
-        contents:<p>- Node.js 서버 개발<br/>- matterport SDK 커스터마이징<br/>- AWS 서버 구축 배포</p>
+        contents:<p>- Node.js 서버 개발<br/>- matterport SDK 커스터마이징<br/>- AWS 서버 구축 배포</p>,
+        site: "https://metagcc.org"
     },{
         id:10,
         company:'(주)집쇼코리아',
         title:'사내 홈페이지 리뉴얼 서버 구축',
         date:'2021.10.01 ~ 2020.10.30',
         skill:'Linux',
-        contents:<p>- 리눅스 Server 구축</p>
+        contents:<p>- 리눅스 Server 구축</p>,
+        site: "http://zipshowkorea.com"
     }
 ]
 
@@ -117,7 +120,7 @@ export default class Content extends Component{
                                 <br/>
                                 <br/>
                                 <strong style={{fontSize:'20px'}}>사람</strong> 김윤석은 독서를 좋아하고 사진 찍기와 그림 그리기를 좋아합니다.<br/>
-                                주로 자기계발 서적과 심리학 책을 많이 읽고 사진은 풍경보다는 인물 찍기를 좋아하고 찍히는 것도 좋아합니다. 제 사진은 <a href='https://www.instagram.com/lodnuy_/'>@_doltograph</a>에서 볼 수 있어요.<br/>
+                                주로 자기계발 서적과 심리학 책을 많이 읽고 사진은 풍경보다는 인물 찍기를 좋아하고 찍히는 것도 좋아합니다. 제 사진은 <a href='https://www.instagram.com/_doltograph/'>@_doltograph</a>에서 볼 수 있어요.<br/>
                                 그림은 주로 유화를 이용해서 그립니다. 제 그림은 <a href='https://www.instagram.com/lodnuy_/'>@lodnuy_</a>에서 볼 수 있어요.<br/>
                                 등산도 좋아해서 시간이 생기면 등산을 다녀요. 예전에는 가벼운 운동으로 동네 뒷산을 선호 했지만 요즘에는 풍경이 아름다운 산을 선호해요. 가장 좋아하는 산은 설악산 입니다.<br/>
                                 평소에는 약간 낯을 가리지만, 친해지면 말이 많아지고 웃고 떠드는 것을 좋아합니다.<br/>
@@ -253,6 +256,16 @@ export default class Content extends Component{
                                         <Col xs={10} className="project-desc">{project.date}</Col>
                                         <Col xs={2} className="project-title">사용 기술</Col>
                                         <Col xs={10} className="project-desc">{project.skill}</Col>
+                                        {
+                                            project.hasOwnProperty("site")
+                                                ? (<Col xs={2} className="project-title">사이트</Col>)
+                                                : null
+                                        }
+                                        {
+                                            project.hasOwnProperty("site")
+                                                ? (<Col xs={10} className="project-desc"><a href={project.site}>{project.site}</a></Col>)
+                                                : null
+                                        }
                                         <Col xs={2} className="project-title">내용</Col>
                                         <Col xs={10} className="project-desc">
                                             <p>
