@@ -120,8 +120,8 @@ export default class Content extends Component{
                                 <br/>
                                 <br/>
                                 <strong style={{fontSize:'20px'}}>사람</strong> 김윤석은 독서를 좋아하고 사진 찍기와 그림 그리기를 좋아합니다.<br/>
-                                주로 자기계발 서적과 심리학 책을 많이 읽고 사진은 풍경보다는 인물 찍기를 좋아하고 찍히는 것도 좋아합니다. 제 사진은 <a href='https://www.instagram.com/_doltograph/'>@_doltograph</a>에서 볼 수 있어요.<br/>
-                                그림은 주로 유화를 이용해서 그립니다. 제 그림은 <a href='https://www.instagram.com/lodnuy_/'>@lodnuy_</a>에서 볼 수 있어요.<br/>
+                                주로 자기계발 서적과 심리학 책을 많이 읽고 사진은 풍경보다는 인물 찍기를 좋아하고 찍히는 것도 좋아합니다. 제 사진은 <a href='https://www.instagram.com/_doltograph/' target="_blank">@_doltograph</a>에서 볼 수 있어요.<br/>
+                                그림은 주로 유화를 이용해서 그립니다. 제 그림은 <a href='https://www.instagram.com/lodnuy_/' target="_blank">@lodnuy_</a>에서 볼 수 있어요.<br/>
                                 등산도 좋아해서 시간이 생기면 등산을 다녀요. 예전에는 가벼운 운동으로 동네 뒷산을 선호 했지만 요즘에는 풍경이 아름다운 산을 선호해요. 가장 좋아하는 산은 설악산 입니다.<br/>
                                 평소에는 약간 낯을 가리지만, 친해지면 말이 많아지고 웃고 떠드는 것을 좋아합니다.<br/>
                                 <br/>
@@ -263,7 +263,7 @@ export default class Content extends Component{
                                         }
                                         {
                                             project.hasOwnProperty("site")
-                                                ? (<Col xs={10} className="project-desc"><a href={project.site}>{project.site}</a></Col>)
+                                                ? (<Col xs={10} className="project-desc"><a href={project.site} target="_blank">{project.site}</a></Col>)
                                                 : null
                                         }
                                         <Col xs={2} className="project-title">내용</Col>
