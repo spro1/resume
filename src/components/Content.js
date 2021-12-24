@@ -19,6 +19,8 @@ import GIT from "../static/image/git.png";
 import UB from "../static/image/ubuntu.png";
 import AWS from "../static/image/aws.png";
 import GCL from "../static/image/gcl.png";
+//aws stack image
+import AWS_BADGE from "../static/image/aws-badge.png";
 
 const projects = [
     {
@@ -74,9 +76,23 @@ const projects = [
         id:8,
         company:'(주)집쇼코리아',
         title:'360간 웹사이트',
-        date:'22020.11.02 ~ 2020.11.30',
+        date:'2020.11.02 ~ 2020.11.30',
         skill:'Express.js, Reacct.js',
-        contents:<p>Express.js Backend 개발 작업<br/>- React.js Frontend 개발 작업<br/>- AWS 서버 구축 배포</p>
+        contents:<p>- Express.js Backend 개발 작업<br/>- React.js Frontend 개발 작업<br/>- AWS 서버 구축 배포</p>
+    },{
+        id:9,
+        company:'(주)집쇼코리아',
+        title:'APCEIU 유네스코 웹사이트',
+        date:'2021.05.21 ~ 2020.06.30',
+        skill:'Node.js',
+        contents:<p>- Node.js 서버 개발<br/>- matterport SDK 커스터마이징<br/>- AWS 서버 구축 배포</p>
+    },{
+        id:10,
+        company:'(주)집쇼코리아',
+        title:'사내 홈페이지 리뉴얼 서버 구축',
+        date:'2021.10.01 ~ 2020.10.30',
+        skill:'Linux',
+        contents:<p>- 리눅스 Server 구축</p>
     }
 ]
 
@@ -206,6 +222,16 @@ export default class Content extends Component{
                             <img className="stack-img" src={GCL}/>
                         </Col>
                     </Row>
+                    <Row>
+                        <Col className="img-box">자격증</Col>
+                    </Row>
+                    <Row>
+                        <Col className="img-box">
+                            <p>- 전자기기기능사, 정보처리기능사</p>
+                            <img className="stack-img" src={AWS_BADGE}/>
+                        </Col>
+                    </Row>
+
                     <Row>
                         <Col className="content-header">
                             <h6 className="content-header-title"><strong>프로젝트 / Project</strong></h6>
