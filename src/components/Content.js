@@ -95,15 +95,23 @@ const projects = [
         date:'2021.10.01 ~ 2020.10.30',
         skill:'Linux',
         contents:<p>- 리눅스 Server 구축</p>,
-        site: "http://zipshowkorea.com"
+        site: "https://zipshowkorea.com"
     },{
         id:11,
         company:'(주)집쇼코리아',
         title:'로케이션픽 - 스튜디오 임대 웹서비스',
         date:'2021.03.01 ~ 2020.11.30',
         skill:'Express.js, AWS, MongoDB, HTML, CSS, JS',
-        contents:<p>- Express.js 웹 서버 개발<br/>- ejs 템플릿 클라이언트 사이드 작업<br/>- DB 서버 구축<br/>- 그 외 퍼블리싱을 제외한 모든 작업<br/>- AWS 서버 구축 배포</p>,
-        site: "http://locationpick.com"
+        contents:<p>- Express.js 웹 서버 개발<br/>- ejs 템플릿 클라이언트 사이드 작업<br/>- DB 서버 구축<br/>- 그 외 퍼블리싱을 제외한 작업<br/>- AWS 서버 구축 배포</p>,
+        site: "https://locationpick.com"
+    },{
+        id:12,
+        company: '개인 사이드 프로젝트',
+        title: 'JYM DIARY - 개인 운동 기록 웹 서비스',
+        date: '2021.12.21 ~ 2022.01.11',
+        skill: 'Express.js, AWS',
+        contents:<p>- Express.js 웹 서버 개발<br/>- AWS 서버 구축<br/>- Figma 웹 디자인</p>,
+        site: "https://jymdiary.com"
     }
 ]
 
@@ -127,13 +135,13 @@ export default class Content extends Component{
                                 아이디어나 새로운 기술에 관해서 토론하는 것을 좋아합니다.
                                 <br/>
                                 <br/>
-                                <strong style={{fontSize:'20px'}}>사람</strong> 김윤석은 독서를 좋아하고 사진 찍기와 그림 그리기를 좋아합니다.<br/>
+                                <strong style={{fontSize:'20px'}}>사람</strong> 김윤석은 독서를 좋아하고 사진 찍기📸와 그림 그리기🎨를 좋아합니다.<br/>
                                 주로 자기계발 서적과 심리학 책을 많이 읽고 사진은 풍경보다는 인물 찍기를 좋아하고 찍히는 것도 좋아합니다. 제 사진은 <a href='https://www.instagram.com/_doltograph/' target="_blank">@_doltograph</a>에서 볼 수 있어요.<br/>
                                 그림은 주로 유화를 이용해서 그립니다. 제 그림은 <a href='https://www.instagram.com/lodnuy_/' target="_blank">@lodnuy_</a>에서 볼 수 있어요.<br/>
                                 등산도 좋아해서 시간이 생기면 등산을 다녀요. 예전에는 가벼운 운동으로 동네 뒷산을 선호 했지만 요즘에는 풍경이 아름다운 산을 선호해요. 가장 좋아하는 산은 설악산 입니다.<br/>
                                 평소에는 약간 낯을 가리지만, 친해지면 말이 많아지고 웃고 떠드는 것을 좋아합니다.<br/>
                                 <br/>
-                                저에 대해서 더 자세히 알고 싶으면 메일로 연락 주세요.
+                                저에 대해서 더 자세히 알고 싶으면 메일로 연락 주세요. <a href="mailto:yundol@kakao.com">📧</a>
                             </p>
                         </Col>
                     </Row>
@@ -185,7 +193,7 @@ export default class Content extends Component{
                     </Row>
                     <Row>
                         <Col xs={4}>
-                            2019.03 - 재학중
+                            2019.03 - 재학중(2023.02 졸업 예정)
                         </Col>
                         <Col>
                             <p><strong>인하대학교(야간대)</strong></p>
