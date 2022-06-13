@@ -112,6 +112,15 @@ const projects = [
         skill: 'Express.js, AWS',
         contents:<p>- Express.js 웹 서버 개발<br/>- AWS 서버 구축<br/>- Figma 웹 디자인</p>,
         site: "https://jymdiary.com"
+    },{
+        id:13,
+        company: '개인 사이드 프로젝트',
+        title: 'MOOBIGO - 영화 데이터를 이용한 관객수 예측 웹 서비스',
+        date: '2022.06.07 ~ 2022.06.10',
+        skill: 'Python, Flask, AWS, Scikit-learn',
+        contents:<p>- 사이킷런을 이용한 관객수 예측 모델<br/>- Flask 웹 서비스 구축<br/>- AWS 서버 구축</p>,
+        github: "https://github.com/spro1/movie_box_off_predict",
+        site: "http://moobigo.com"
     }
 ]
 
@@ -280,6 +289,16 @@ export default class Content extends Component{
                                         {
                                             project.hasOwnProperty("site")
                                                 ? (<Col xs={10} className="project-desc"><a href={project.site} target="_blank">{project.site}</a></Col>)
+                                                : null
+                                        }
+                                        {
+                                            project.hasOwnProperty("github")
+                                                ? (<Col xs={2} className="project-title">깃허브 주소</Col>)
+                                                : null
+                                        }
+                                        {
+                                            project.hasOwnProperty("github")
+                                                ? (<Col xs={10} className="project-desc"><a href={project.github} target="_blank">{project.github}</a></Col>)
                                                 : null
                                         }
                                         <Col xs={2} className="project-title">내용</Col>
