@@ -84,7 +84,7 @@ const projects = [
         id:9,
         company:'(주)집쇼코리아',
         title:'APCEIU 유네스코 웹사이트',
-        date:'2021.05.21 ~ 2020.06.30',
+        date:'2021.05.21 ~ 2021.06.30',
         skill:'Node.js',
         contents:<p>- Node.js 서버 개발<br/>- matterport SDK 커스터마이징<br/>- AWS 서버 구축 배포</p>,
         site: "https://metagcc.org"
@@ -92,7 +92,7 @@ const projects = [
         id:10,
         company:'(주)집쇼코리아',
         title:'사내 홈페이지 리뉴얼 서버 구축',
-        date:'2021.10.01 ~ 2020.10.30',
+        date:'2021.10.01 ~ 2021.10.30',
         skill:'Linux',
         contents:<p>- 리눅스 Server 구축</p>,
         site: "https://zipshowkorea.com"
@@ -100,7 +100,7 @@ const projects = [
         id:11,
         company:'(주)집쇼코리아',
         title:'로케이션픽 - 스튜디오 임대 웹서비스',
-        date:'2021.03.01 ~ 2020.11.30',
+        date:'2021.03.01 ~ 2021.11.30',
         skill:'Express.js, AWS, MongoDB, HTML, CSS, JS',
         contents:<p>- Express.js 웹 서버 개발<br/>- ejs 템플릿 클라이언트 사이드 작업<br/>- DB 서버 구축<br/>- 그 외 퍼블리싱을 제외한 작업<br/>- AWS 서버 구축 배포</p>,
         site: "https://locationpick.com"
@@ -114,6 +114,22 @@ const projects = [
         site: "https://jymdiary.com"
     },{
         id:13,
+        company:'(주)집쇼코리아',
+        title:'연세대학교-3D 도서관 서비스',
+        date:'2022.02.01 ~ 2022.05.31',
+        skill:'Express.js, AWS, MongoDB, HTML, CSS, JS, matterport sdk',
+        contents:<p>- Express.js CMS 개발<br/>- Matterport sdk 활용 프론트페이지<br/>- AWS 서버 구축 배포</p>,
+        site: "https://library.yonsei.ac.kr/local/html/virtualTour"
+    },{
+        id:14,
+        company:'(주)집쇼코리아',
+        title:'김해도시가박물관-3D',
+        date:'2022.02.01 ~ 2022.05.31',
+        skill:'Express.js, AWS, MongoDB, HTML, CSS, JS, matterport sdk',
+        contents:<p>- Express.js CMS 개발<br/>- Matterport sdk 활용 프론트페이지<br/>- AWS 서버 구축 배포</p>,
+        site: "https://도시가박물관.com"
+    },{
+        id:15,
         company: '개인 사이드 프로젝트',
         title: 'MOOBIGO - 영화 데이터를 이용한 관객수 예측 웹 서비스',
         date: '2022.06.07 ~ 2022.06.10',
