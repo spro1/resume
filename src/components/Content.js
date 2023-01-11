@@ -136,7 +136,39 @@ const projects = [
         skill: 'Python, Flask, AWS, Scikit-learn',
         contents:<p>- 사이킷런을 이용한 관객수 예측 모델<br/>- Flask 웹 서비스 구축<br/>- AWS 서버 구축</p>,
         github: "https://github.com/spro1/movie_box_off_predict",
-        site: "http://moobigo.com"
+        site: "http://moobigo.xyz"
+    },{
+        id:16,
+        company: '(주)집쇼코리아',
+        title: '유네스코 아태교육원 홈페이지 리뉴얼',
+        date: '2022.06~2022.08',
+        skill: 'Express.js, AWS, MongoDB',
+        contents:<p>- 기존 사이트 디자인 변경<br/>- 방문 예약 기능 추가<br/>- CMS 구축</p>,
+        site: "http://gcc.unescoapceiu.org/"
+    },{
+        id:17,
+        company: '(주)집쇼코리아',
+        title: '연세대학교 도서관 이벤트 페이지 개발',
+        date: '2022.09~2022.09',
+        skill: 'Express.js, matterport sdk',
+        contents:<p>- 연세대학교 VR 도서관 이벤트 페이지 개발</p>,
+        site: "https://virtual.yonsei.ac.kr/event"
+    },{
+        id:18,
+        company: '(주)집쇼코리아',
+        title: '김해 고고가야 AR 모바일 서비스',
+        date: '2022.09~2022.11',
+        skill: 'three.js',
+        contents:<p>- three.js 웹 모바일 AR 페이지 개발</p>,
+        site: "https://smartcity.gimhae.go.kr/mobilear/ar/ar29.html"
+    },{
+        id:19,
+        company: '(주)집쇼코리아',
+        title: '3D 충청남도 로케이션 페이지 유지보수',
+        date: '2022.11~2022.11',
+        skill: 'html',
+        contents:<p>- 아임웹 기반 3D 충청남도 로케이션 페이지 추가 및 유지보수</p>,
+        site: "https://3dcnfc.kr/"
     }
 ]
 
@@ -197,8 +229,9 @@ export default class Content extends Component{
                             <p><strong>(주)집쇼코리아</strong></p>
                             <p>대리 · 정규직</p>
                             <p>
-                                웹서비스 개발<br/>
-                                (BackEnd)
+                                웹서비스 개발(BackEnd)<br/>
+                                Node.js Express.js 웹사이트 개발<br/>
+                                AWS 서버 구축 배포
                             </p>
                         </Col>
                     </Row>
@@ -218,11 +251,12 @@ export default class Content extends Component{
                     </Row>
                     <Row>
                         <Col xs={4}>
-                            2019.03 - 재학중(2023.02 졸업 예정)
+                            2019.03 - 졸업예정(2023.02)
                         </Col>
                         <Col>
                             <p><strong>인하대학교(야간대)</strong></p>
                             <p>소프트웨어융합공학과 · 재학</p>
+                            <p>4.08/4.5</p>
                         </Col>
                     </Row>
                     <Row>
