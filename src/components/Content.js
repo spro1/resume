@@ -255,8 +255,8 @@ export default class Content extends Component{
                         </Col>
                         <Col>
                             <p><strong>인하대학교(야간대)</strong></p>
-                            <p>소프트웨어융합공학과 · 재학</p>
-                            <p>4.08/4.5</p>
+                            <p>소프트웨어융합공학과 · 졸업예정</p>
+                            <p>최종 학점 4.08/4.5</p>
                         </Col>
                     </Row>
                     <Row>
